@@ -15,7 +15,7 @@ class MyFirstApp(tk.Tk):
         self.setup_ui()
 
     def setup_ui(self):
-        label = tk.Label(self, text="ၼႃႈတႃ Software ႁဝ်း တင်ႈၵႃႈဝႆႉယဝ်ႉၶႃႈ!", bg="#f0f0f0")
+        label = tk.Label(self, text="Main Page", bg="#f0f0f0")
         label.pack(pady=100)
 
 if __name__ == "__main__":
