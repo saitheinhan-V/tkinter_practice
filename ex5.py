@@ -10,7 +10,7 @@ class MyApp(tk.Tk):
         self.setup_ui()
 
     def setup_ui(self):
-        raw_image = Image.open("profile.png")
+        raw_image = Image.open("images/profile.png")
         resized_image = raw_image.resize((200, 200))
 
         self.photo = ImageTk.PhotoImage(resized_image)

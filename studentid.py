@@ -18,7 +18,7 @@ class MainApp(tk.Tk):
         self.title_label.grid(row=0,column=0,pady=5)
 
         #profile image
-        profile_image = Image.open("profile.png")
+        profile_image = Image.open("images/profile.png")
         resized_image = profile_image.resize((120, 120),Image.Resampling.LANCZOS)
         self.photo = ImageTk.PhotoImage(resized_image)
 

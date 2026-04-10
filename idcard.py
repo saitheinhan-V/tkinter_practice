@@ -1,6 +1,9 @@
 import tkinter as tk
 from PIL import Image, ImageTk
 
+from resource import resource_path
+
+
 class MainApp(tk.Tk):
     def __init__(self):
         super().__init__()
@@ -28,7 +31,8 @@ class MainApp(tk.Tk):
         self.grid_rowconfigure(1, weight=1)
 
         #profile image
-        profile_image = Image.open("profile.png")
+        img_path = resource_path("images/profile.png")
+        profile_image = Image.open(img_path)
         resized_image = profile_image.resize((150, 150),Image.Resampling.LANCZOS)
         self.photo = ImageTk.PhotoImage(resized_image)
 

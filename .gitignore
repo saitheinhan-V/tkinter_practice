@@ -1,2 +1,6 @@
-profile.png
+images/*
+__pycache__
 .idea/
+build/*
+dist/*
+idcard.spec
